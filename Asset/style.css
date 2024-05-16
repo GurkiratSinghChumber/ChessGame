@@ -1,0 +1,203 @@
+*{
+    background-color: #302e2b;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.squareRow{
+    
+    display: flex;
+}
+
+.square{
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.squarePnum{
+    background-color: transparent;
+    position: absolute;
+    top: -15px;
+    left: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.squarePchar{
+    background-color: transparent;
+    position: absolute;
+    bottom: -15px;
+    right: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.white .squareP{
+    color: #769656;
+}
+.black .squareP{
+    color: #EEEED2;
+}
+
+.white{
+    background-color: #EEEED2;
+}
+
+.black{
+    background-color: #769656;
+}
+
+img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    background-color: transparent;
+    cursor:pointer;
+}
+
+
+
+.circle{
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #3b3b3b7b;
+    position: absolute;
+}
+.white.selected{
+    background-color: #f7f769;
+}
+
+.black.selected{
+    background-color: rgba(172, 255, 47, 0.795);
+}
+
+.red{
+    background-color: rgba(255, 0, 0, 0.767);
+}
+
+.checkedKing{
+    background-color: rgba(255, 0, 0, 0.378);
+}
+#move_logger {
+    width: 35vw;
+    max-width: 600px;
+    height: 80vh;
+    border-radius: 10px;
+    overflow: scroll;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #333;
+    position: relative;
+    /* Set background color */
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+.header{
+    position: fixed;
+    width: 35vw;
+    box-shadow: 0 11px 5px -3px rgb(0 0 0 / 79%); 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.data{
+    margin-top: 35px;
+}
+.header,
+.data {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    flex-wrap: wrap;
+    /* Add border between header and data */
+}
+
+.cell {
+    flex: 1;
+    padding: 8px;
+    text-align: center;
+    color: white;
+    /* Set cell text color */
+
+    /* Add border between cells */
+}
+
+.header .cell {
+    background-color: #333;
+    /* Set header cell background color */
+    color: white;
+        border-right: 1px solid #ddd;
+    /* Set header cell text color */
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    font-size: small;
+    
+}
+
+
+.row .cell{
+    width: 33%;
+    padding: 5px;
+}
+
+.data .row:nth-child(even) {
+    background-color: #df2323;
+    /* Set even row background color */
+}
+
+.data .row:hover {
+    background-color: #e0e0e0;
+    /* Set hover row background color */
+}
+
+/* Remove right border for last cell in each row */
+.cell:last-child {
+    border-right: none;
+}
+
+.modal{
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+
+}
+.modal p{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+}
+.modal div{
+    background-color: transparent;
+}
+
+.modal img{
+    border: 3px solid transparent;
+    }
+
+.modal img:hover{
+    border: 3px solid yellow;
+}

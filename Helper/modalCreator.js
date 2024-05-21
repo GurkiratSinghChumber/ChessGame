@@ -32,7 +32,7 @@ class ModalCreator {
 
 function pawnPromotion(color, callBack, id) {
   const rook = document.createElement("img");
-  rook.src = `/Asset/Images/${color}/rook.png`;
+  rook.src = `Asset/Images/${color}/rook.png`;
   rook.onclick = () => {
     if (color == "White") {
       callBack(whiteRook(id), id);
@@ -44,7 +44,7 @@ function pawnPromotion(color, callBack, id) {
   };
 
   const bishop = document.createElement("img");
-  bishop.src = `/Asset/Images/${color}/bishop.png`;
+  bishop.src = `Asset/Images/${color}/bishop.png`;
   bishop.onclick = () => {
     if (color == "White") {
       callBack(whiteBishop(id), id);
@@ -55,7 +55,7 @@ function pawnPromotion(color, callBack, id) {
   };
 
   const queen = document.createElement("img");
-  queen.src = `/Asset/Images/${color}/queen.png`;
+  queen.src = `Asset/Images/${color}/queen.png`;
   queen.onclick = () => {
     if (color == "White") {
       callBack(whiteQueen(id), id);
@@ -66,7 +66,7 @@ function pawnPromotion(color, callBack, id) {
   };
 
   const knight = document.createElement("img");
-  knight.src = `/Asset/Images/${color}/knight.png`;
+  knight.src = `Asset/Images/${color}/knight.png`;
   knight.onclick = () => {
     if (color == "White") {
       callBack(whiteKnight(id), id);
